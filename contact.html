@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CV of Viktoriia Prominska, a professional Frontend Developer. Skilled in building responsive interfaces with React,
+    HTML, CSS, and JavaScript. Learn more about her skills, projects, and professional experience.">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./working.png" type="image/png">
+    <link rel="stylesheet" href="styles.css" />
+    <title>Contact form</title>
+</head>
+<body>
+   <div class="container">
+    <header>
+        <h1>Viktoriia Prominska</h1>
+        <button class="nav-toggle" onclick="toggleMenu()">
+            <div class="bars"></div>
+        </button>
+        <nav class="menu">
+            <a href="index.html">About me</a>
+            <a href="project.html">Projects</a>
+            <a href="expirience.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="https://formspree.io/f/xkggpoep" method="POST" id="contactForm">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+        
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+        
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone" name="phone">
+        
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+        
+                <button class="button_form" type="submit">Send</button>
+            </form>
+            <div id="notification" class="notification">
+                Thank you for your message! Your message has been sent.
+            </div>
+            <h3>Alternatively, you can reach me</h3>
+            <div class="contact-options">
+                <p class="number"><strong>Phone:</strong> <a href="tel:+4740594773">+47 (405) 947-73</a></p>
+                <p class="post"><strong>Email:</strong> <a href="mailto:torri12388@gmail.com">torri12388@gmail.com</a></p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2025 Viktoriia Prominska. All rights reserved. Created and owned by the creator of this CV.</p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
+                </a>
+                <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank">
+                    <img src="./ln.png" alt="LinkedIn" />
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=100086322291733" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="app.js"></script>
+   </div> 
+</body>
+</html>
