@@ -3,65 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Viktoriia Prominska, a professional Frontend Developer. Skilled in building responsive interfaces with React,
-    HTML, CSS, and JavaScript. Learn more about her skills, projects, and professional experience.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Projects by Viktoriia Prominska, Frontend Developer. Featuring Haugaland SmartKommune, Smart Nordic Home, and interactive web applications built with TypeScript, React, and REST APIs.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./working.png" type="image/png">
-    <title>Project</title>
+    <title>Projects | Viktoriia Prominska</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Viktoriia Prominska</h1>
-            <button class="nav-toggle" onclick="toggleMenu()">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-name">Viktoriia Prominska</span>
+                    <span class="brand-badge">Frontend Developer</span>
+                </a>
+            </div>
+            <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
                 <div class="bars"></div>
             </button>
             <nav class="menu">
                 <a href="index.html">About me</a>
-                <a href="project.html">Projects</a>
-                <a href="expirience.html">Skills</a>
+                <a href="project.html" class="active">Projects</a>
+                <a href="expirience.html">Experience &amp; Skills</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
+
         <main>
-            <h2>My Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <img src="./project_1.jpg" alt="Project 1" class="project-image">
-                    <p class="project-title">Weather App</p>
-                    <a href="https://amazing-cocada-fa128d.netlify.app/" target="_blank" class="project-button">View Project</a>
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p class="section-subtitle">A showcase of production-ready web applications, live civic dashboards, and data-driven platforms.</p>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1: Haugaland SmartKommune (FLAGSHIP) -->
+                <div class="project-card featured">
+                    <div class="card-badge">Flagship Portal</div>
+                    <div class="project-image-wrapper">
+                        <img src="./project_haugaland.svg" alt="Haugaland SmartKommune" class="project-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Haugaland SmartKommune</h3>
+                        <p class="project-tagline">Citizen &amp; Energy Intelligence Portal for Haugesund &amp; Rogaland</p>
+                        <p class="project-description">
+                            Full-featured civic portal integrating real-time <strong>Nord Pool NO2 spot prices</strong>, 
+                            live <strong>Open-Meteo weather</strong>, citizen issue reporting with photo upload, 
+                            interactive Leaflet map, and a dynamic municipal savings calculator.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React / Vite</span>
+                            <span class="tag">Nord Pool API</span>
+                            <span class="tag">Open-Meteo API</span>
+                            <span class="tag">Leaflet Maps</span>
+                            <span class="tag">CSS Grid</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://haugaland-smart-kommune.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg>
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/Viktoriia-P-H11/Haugaland_Smart_Kommune" target="_blank" rel="noopener noreferrer" class="project-button">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
                 </div>
-                <div class="project-card">
-                    <img src="./project_2.jpg" alt="Project 2" class="project-image">
-                    <p class="project-title">Dictionary</p>
-                    <a href="https://prismatic-bavarois-6a29b2.netlify.app/" target="_blank" class="project-button">View Project</a>
+
+                <!-- Project 2: Smart Nordic Home (FLAGSHIP) -->
+                <div class="project-card featured">
+                    <div class="card-badge badge-green">Flagship Energy App</div>
+                    <div class="project-image-wrapper">
+                        <img src="./project_nordic.svg" alt="Smart Nordic Home" class="project-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Smart Nordic Home</h3>
+                        <p class="project-tagline">Nordic Smart Energy Management &amp; Appliance Optimization</p>
+                        <p class="project-description">
+                            Nordic home energy management dashboard that analyzes 24-hour electricity spot prices, 
+                            automates appliance scheduling (EV charger, water heater) for off-peak hours, 
+                            and incorporates the Norwegian government subsidy (strømstøtte).
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">TypeScript</span>
+                            <span class="tag">React / Vite</span>
+                            <span class="tag">Nord Pool Spot API</span>
+                            <span class="tag">Energy Analytics</span>
+                            <span class="tag">Responsive UI</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://github.com/ViktoriiaProm/Nordic__Smart_Energy.git" target="_blank" rel="noopener noreferrer" class="project-button primary">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                                GitHub Repo
+                            </a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Project 3: Craftvilla -->
                 <div class="project-card">
-                    <img src="./project_3.jpg" alt="Project 3" class="project-image">
-                    <p class="project-title">Game</p>
-                    <a href="https://jazzy-medovik-6a9e69.netlify.app/" target="_blank" class="project-button">View Project</a>
+                    <div class="project-image-wrapper">
+                        <img src="./project_4.jpg" alt="Craftvilla" class="project-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Craftvilla</h3>
+                        <p class="project-tagline">Artisanal &amp; Handmade E-Commerce Platform</p>
+                        <p class="project-description">
+                            Collaborative group project delivering a responsive marketplace for unique handmade crafts, featuring product catalogs, filtering, and modern responsive layouts.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">Vercel</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://group-project-1-theta.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-button">View Live Demo</a>
+                        </div>
+                    </div>
                 </div>
+
+                <!-- Project 4: Weather App -->
                 <div class="project-card">
-                    <img src="./project_4.jpg" alt="Project 4" class="project-image">
-                    <p class="project-title">Craftvilla</p>
-                    <a href="https://group-project-1-theta.vercel.app/" target="_blank" class="project-button">View Project</a>
+                    <div class="project-image-wrapper">
+                        <img src="./project_1.jpg" alt="Weather App" class="project-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Global Weather App</h3>
+                        <p class="project-tagline">Real-Time Global Weather Forecast</p>
+                        <p class="project-description">
+                            Dynamic weather application providing real-time conditions, wind speeds, humidity, and 5-day forecasts via live weather API integration.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">REST API</span>
+                            <span class="tag">HTML5/CSS3</span>
+                            <span class="tag">Netlify</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://amazing-cocada-fa128d.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-button">View Live Demo</a>
+                        </div>
+                    </div>
                 </div>
-                
+
+                <!-- Project 5: Dictionary -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./project_2.jpg" alt="Dictionary App" class="project-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Interactive Dictionary</h3>
+                        <p class="project-tagline">Multi-API Word Explorer</p>
+                        <p class="project-description">
+                            Dictionary search engine with phonetic audio pronunciations, synonyms, definitions, and dynamic image galleries fetched from Unsplash and Dictionary APIs.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">API Integration</span>
+                            <span class="tag">CSS Grid</span>
+                            <span class="tag">Netlify</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://prismatic-bavarois-6a29b2.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-button">View Live Demo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 6: Interactive Game -->
+                <div class="project-card">
+                    <div class="project-image-wrapper">
+                        <img src="./project_3.jpg" alt="Game" class="project-image">
+                    </div>
+                    <div class="card-content">
+                        <h3 class="project-title">Interactive Web Game</h3>
+                        <p class="project-tagline">DOM Animation &amp; Event-Driven Game</p>
+                        <p class="project-description">
+                            Browser-based interactive game implementing collision detection, score tracking, dynamic state management, and fluid animations.
+                        </p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">DOM API</span>
+                            <span class="tag">CSS Animation</span>
+                            <span class="tag">Netlify</span>
+                        </div>
+                        <div class="project-actions">
+                            <a href="https://jazzy-medovik-6a9e69.netlify.app/" target="_blank" rel="noopener noreferrer" class="project-button">View Live Demo</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </main>
+
         <footer>
             <div class="footer-content">
-                <p>&copy; 2025 Viktoriia Prominska. All rights reserved. Created and owned by the creator of this CV.</p>
+                <p>&copy; 2026 Viktoriia Prominska. Frontend Developer · Haugesund, Norway.</p>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
+                    <a href="https://github.com/Viktoriia-P-H11" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank">
+                    <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                         <img src="./ln.png" alt="LinkedIn" />
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=100086322291733" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                    <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
                     </a>
                 </div>
             </div>

@@ -3,90 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Viktoriia Prominska, a professional Frontend Developer. Skilled in building responsive interfaces with React,
-    HTML, CSS, and JavaScript. Learn more about her skills, projects, and professional experience.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Experience and Education of Viktoriia Prominska, Frontend Developer & Engineer. Background in Computer Engineering, Kodehode (Jobloop AS), and SheCodes.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css" />
     <link rel="icon" href="./working.png" type="image/png">
-    <title>Education</title>
+    <title>Experience &amp; Education | Viktoriia Prominska</title>
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>Viktoriia Prominska</h1>
-            <button class="nav-toggle" onclick="toggleMenu()">
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-name">Viktoriia Prominska</span>
+                    <span class="brand-badge">Frontend Developer</span>
+                </a>
+            </div>
+            <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
                 <div class="bars"></div>
             </button>
             <nav class="menu">
                 <a href="index.html">About me</a>
                 <a href="project.html">Projects</a>
-                <a href="expirience.html">Skills</a>
+                <a href="expirience.html" class="active">Experience &amp; Skills</a>
                 <a href="contact.html">Contact</a>
             </nav>
         </header>
+
         <main>
-            <div class="resume-container">
-                <h1>Education & Skills</h1>
-
-                <div class="education-section">
-                    <h2>National University of Shipbuilding</h2>
-                    <p class="subtitle">Name Admiral Makarova</p>
-                    <p class="degree">Specialist, Programmer</p>
-                    <p class="date">Sep 2005 - Dec 2011</p>
-                    <p class="grade"><strong>Average Grade:</strong> 4.6</p>
-                    <p class="skills">
-                        <strong>Skills:</strong> Programming PLC · Office operation · Electronics repair · Public relations · 
-                        Web development · Graphics operation · IT operation · Strategy · Vehicle driving · C++
-                    </p>
+            <div class="resume-wrapper">
+                <div class="section-header">
+                    <h2>Work Experience &amp; Education</h2>
+                    <p class="section-subtitle">Bridging strong foundational software engineering with modern frontend practices</p>
                 </div>
 
-                <div class="education-section">
-                    <h2>SheCodes</h2>
-                    <p class="degree">FrontEnd Developer</p>
-                    <p class="date">Aug 2022 - Dec 2023</p>
-                    <p class="grade"><strong>Average Grade:</strong> 12</p>
-                    <p class="skills">
-                        <strong>Skills:</strong> Front-end development · Promotion · Web development
-                    </p>
+                <!-- Work Experience Section -->
+                <div class="timeline-group">
+                    <div class="timeline-title-bar">
+                        <span class="timeline-icon">💼</span>
+                        <h3>Practical Experience &amp; Training</h3>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h4 class="timeline-role">Front-End Developer Trainee</h4>
+                                <p class="timeline-org">Kodehode (Jobloop AS) · Haugesund, Norway</p>
+                            </div>
+                            <span class="timeline-badge">2024 – Present</span>
+                        </div>
+                        <p class="timeline-desc">
+                            Intensive professional training in modern front-end engineering, focused on production-ready web application development:
+                        </p>
+                        <ul class="timeline-bullets">
+                            <li>Architected and implemented <strong>Haugaland SmartKommune</strong>, integrating live REST APIs (Nord Pool NO2 spot prices, Open-Meteo weather), Leaflet interactive maps, and community reporting.</li>
+                            <li>Engineered <strong>Smart Nordic Home</strong>, creating an energy analytics dashboard with cost calculation algorithms and appliance scheduling during cheap electricity hours.</li>
+                            <li>Practiced component-driven UI architecture, clean TypeScript, Git/GitHub version control, responsive layouts, and performance optimization.</li>
+                        </ul>
+                        <div class="timeline-tags">
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>REST APIs</span>
+                            <span>Git / GitHub</span>
+                            <span>Responsive UI</span>
+                        </div>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h4 class="timeline-role">IT &amp; Technical Systems Specialist</h4>
+                                <p class="timeline-org">Technical Operations &amp; Support · Ukraine</p>
+                            </div>
+                            <span class="timeline-badge">Engineering Background</span>
+                        </div>
+                        <p class="timeline-desc">
+                            Applied engineering and IT fundamentals to hardware/software maintenance, troubleshooting, data management, and operational workflows with high attention to precision.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="education-section">
-                    <h2>Professional Lyceum of the Service Sector</h2>
-                    <p class="degree">Specialist, Computer Typesetting Operator</p>
-                    <p class="date">Sep 2010 - Sep 2011</p>
-                    <p class="grade"><strong>Average Grade:</strong> 5</p>
-                    <p class="skills">
-                        <strong>Skills:</strong> Web development
-                    </p>
+                <!-- Education Section -->
+                <div class="timeline-group">
+                    <div class="timeline-title-bar">
+                        <span class="timeline-icon">🎓</span>
+                        <h3>Higher Education &amp; Certifications</h3>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h4 class="timeline-role">Specialist Degree in Computer Engineering &amp; Software Systems</h4>
+                                <p class="timeline-org">National University of Shipbuilding (Admiral Makarov)</p>
+                            </div>
+                            <span class="timeline-badge">2005 – 2011</span>
+                        </div>
+                        <p class="timeline-desc">
+                            Comprehensive 5-year higher engineering education covering core computer science: software design, algorithms, databases, networking, system architecture, and hardware/software integration. Average Grade: <strong>4.6 / 5.0</strong>.
+                        </p>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h4 class="timeline-role">Front-End Web Development Program</h4>
+                                <p class="timeline-org">SheCodes Pro &amp; React Certification</p>
+                            </div>
+                            <span class="timeline-badge">2022 – 2023</span>
+                        </div>
+                        <p class="timeline-desc">
+                            Hands-on coursework covering responsive web development, JavaScript ES6+, React component architecture, state management, live API integrations, and cloud hosting. Grade: <strong>Top Honor (12/12)</strong>.
+                        </p>
+                    </div>
+
+                    <div class="timeline-card">
+                        <div class="timeline-header">
+                            <div>
+                                <h4 class="timeline-role">Specialist, Computer Systems &amp; Typesetting</h4>
+                                <p class="timeline-org">Professional Lyceum of the Service Sector</p>
+                            </div>
+                            <span class="timeline-badge">2010 – 2011</span>
+                        </div>
+                        <p class="timeline-desc">
+                            Fundamentals of digital typography, layout design, and computer operations. Grade: <strong>5.0 / 5.0</strong>.
+                        </p>
+                    </div>
                 </div>
 
-                <div class="education-section">
-                    <h2>School Peapod</h2>
-                    <p class="degree">FrontEnd Developer</p>
-                    <p class="date">Dec 2021</p>
-                    <p class="skills">
-                        <strong>Skills:</strong> Front-end development · Web development
-                    </p>
+                <!-- Languages & Attributes -->
+                <div class="languages-grid">
+                    <div class="lang-card">
+                        <h4>🌍 Languages</h4>
+                        <ul>
+                            <li><strong>Norwegian (Norsk):</strong> Working proficiency (B1/B2, actively developing)</li>
+                            <li><strong>English:</strong> Professional working proficiency</li>
+                            <li><strong>Ukrainian:</strong> Native</li>
+                        </ul>
+                    </div>
+                    <div class="lang-card">
+                        <h4>⚡ Strengths</h4>
+                        <ul>
+                            <li>Analytical engineering mindset &amp; structured problem-solving</li>
+                            <li>Continuous learner, quick to adopt new frameworks &amp; APIs</li>
+                            <li>Detail-oriented approach to clean UI and accessible code</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </main>
+
         <footer>
             <div class="footer-content">
-                <p>&copy; 2025 Viktoriia Prominska. All rights reserved. Created and owned by the creator of this CV.</p>
+                <p>&copy; 2026 Viktoriia Prominska. Frontend Developer · Haugesund, Norway.</p>
                 <div class="social-icons">
-                    <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
+                    <a href="https://github.com/Viktoriia-P-H11" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
                     </a>
-                    <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank">
+                    <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
                         <img src="./ln.png" alt="LinkedIn" />
                     </a>
-                    <a href="https://www.facebook.com/profile.php?id=100086322291733" target="_blank">
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+                    <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
                     </a>
                 </div>
             </div>
         </footer>
-        <script src="app.js"></script>
     </div>
+    <script src="app.js"></script>
 </body>
 </html>

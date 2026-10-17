@@ -3,72 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Viktoriia Prominska, a professional Frontend Developer. Skilled in building responsive interfaces with React,
-    HTML, CSS, and JavaScript. Learn more about her skills, projects, and professional experience.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Contact Viktoriia Prominska, Frontend Developer based in Haugesund, Norway. Available for software development roles and project collaborations.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./working.png" type="image/png">
     <link rel="stylesheet" href="styles.css" />
-    <title>Contact form</title>
+    <title>Contact | Viktoriia Prominska</title>
 </head>
 <body>
-   <div class="container">
-    <header>
-        <h1>Viktoriia Prominska</h1>
-        <button class="nav-toggle" onclick="toggleMenu()">
-            <div class="bars"></div>
-        </button>
-        <nav class="menu">
-            <a href="index.html">About me</a>
-            <a href="project.html">Projects</a>
-            <a href="expirience.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <div class="contact-form">
-            <h2>Contact Us</h2>
-            <form action="https://formspree.io/f/xkggpoep" method="POST" id="contactForm">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" required>
-        
-                <label for="email">Your Email</label>
-                <input type="email" id="email" name="email" required>
-        
-                <label for="phone">Your Phone</label>
-                <input type="tel" id="phone" name="phone">
-        
-                <label for="message">Your Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-        
-                <button class="button_form" type="submit">Send</button>
-            </form>
-            <div id="notification" class="notification">
-                Thank you for your message! Your message has been sent.
-            </div>
-            <h3>Alternatively, you can reach me</h3>
-            <div class="contact-options">
-                <p class="number"><strong>Phone:</strong> <a href="tel:+4740594773">+47 (405) 947-73</a></p>
-                <p class="post"><strong>Email:</strong> <a href="mailto:torri12388@gmail.com">torri12388@gmail.com</a></p>
-            </div>
-        </div>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Viktoriia Prominska. All rights reserved. Created and owned by the creator of this CV.</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
-                </a>
-                <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank">
-                    <img src="./ln.png" alt="LinkedIn" />
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100086322291733" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
+    <div class="container">
+        <header>
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-name">Viktoriia Prominska</span>
+                    <span class="brand-badge">Frontend Developer</span>
                 </a>
             </div>
-        </div>
-    </footer>
+            <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                <div class="bars"></div>
+            </button>
+            <nav class="menu">
+                <a href="index.html">About me</a>
+                <a href="project.html">Projects</a>
+                <a href="expirience.html">Experience &amp; Skills</a>
+                <a href="contact.html" class="active">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <div class="contact-wrapper">
+                <div class="section-header">
+                    <h2>Get in Touch</h2>
+                    <p class="section-subtitle">Interested in collaborating or discussing developer opportunities? Feel free to reach out.</p>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Form Card -->
+                    <div class="contact-card form-card">
+                        <h3>Send a Message</h3>
+                        <form action="https://formspree.io/f/xkggpoep" method="POST" id="contactForm">
+                            <div class="form-group">
+                                <label for="name">Your Name</label>
+                                <input type="text" id="name" name="name" placeholder="John Doe" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Your Email</label>
+                                <input type="email" id="email" name="email" placeholder="name@example.com" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone">Your Phone (optional)</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+47 ...">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, team, or opportunity..." required></textarea>
+                            </div>
+
+                            <button class="btn btn-primary btn-submit" type="submit">Send Message</button>
+                        </form>
+                        <div id="notification" class="notification">
+                            Thank you! Your message is being sent...
+                        </div>
+                    </div>
+
+                    <!-- Direct Info Card -->
+                    <div class="contact-card info-card">
+                        <h3>Direct Contact Information</h3>
+                        <div class="contact-info-list">
+                            <div class="contact-info-item">
+                                <span class="contact-icon">📍</span>
+                                <div>
+                                    <p class="info-label">Location</p>
+                                    <p class="info-value">Haugesund / Rogaland, Norway</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <span class="contact-icon">✉️</span>
+                                <div>
+                                    <p class="info-label">Email</p>
+                                    <p class="info-value"><a href="mailto:viktoriia1ua@gmail.com">viktoriia1ua@gmail.com</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <span class="contact-icon">📱</span>
+                                <div>
+                                    <p class="info-label">Phone</p>
+                                    <p class="info-value"><a href="tel:+4740594773">+47 405 94 773</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <span class="contact-icon">💼</span>
+                                <div>
+                                    <p class="info-label">LinkedIn</p>
+                                    <p class="info-value"><a href="https://www.linkedin.com/in/viktoriiap/" target="_blank" rel="noopener noreferrer">linkedin.com/in/viktoriiap</a></p>
+                                </div>
+                            </div>
+
+                            <div class="contact-info-item">
+                                <span class="contact-icon">🐙</span>
+                                <div>
+                                    <p class="info-label">GitHub</p>
+                                    <p class="info-value"><a href="https://github.com/Viktoriia-P-H11" target="_blank" rel="noopener noreferrer">github.com/Viktoriia-P-H11</a></p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="contact-status-card">
+                            <span class="status-dot"></span>
+                            <p>Currently open to Frontend &amp; Web Development positions, internships, and project collaborations in Rogaland and remote across Norway.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Viktoriia Prominska. Frontend Developer · Haugesund, Norway.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Viktoriia-P-H11" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <img src="./ln.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
     <script src="app.js"></script>
-   </div> 
 </body>
 </html>

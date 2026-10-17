@@ -3,133 +3,176 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="CV of Viktoriia Prominska, a professional Frontend Developer. Skilled in building responsive interfaces with React,
-    HTML, CSS, and JavaScript. Learn more about her skills, projects, and professional experience.">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Portfolio & CV of Viktoriia Prominska, Frontend Developer & Engineer. Specialized in building responsive, high-performance web applications using React, TypeScript, JavaScript, and REST APIs.">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="icon" href="./working.png" type="image/png">
     <link rel="stylesheet" href="styles.css" />
-    <title>CV Viktoriia Prominska</title>
+    <title>Viktoriia Prominska | Frontend Developer &amp; Engineer</title>
 </head>
 <body>
     <div class="container">
-    <header>
-        <h1>Viktoriia Prominska</h1>
-        <button class="nav-toggle" onclick="toggleMenu()">
-            <div class="bars"></div>
-        </button>
-        <nav class="menu">
-            <a href="index.html">About me</a>
-            <a href="project.html">Projects</a>
-            <a href="expirience.html">Skills</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main>
-        <table>
-            <tr>
-                <td>
-                    <img class="logo" src="./foto.jpg" alt="Logo">
-                </td>
-                <td>
-                    <div class="typer-text">
+        <header>
+            <div class="brand">
+                <a href="index.html" class="brand-link">
+                    <span class="brand-name">Viktoriia Prominska</span>
+                    <span class="brand-badge">Frontend Developer</span>
+                </a>
+            </div>
+            <button class="nav-toggle" onclick="toggleMenu()" aria-label="Toggle navigation menu">
+                <div class="bars"></div>
+            </button>
+            <nav class="menu">
+                <a href="index.html" class="active">About me</a>
+                <a href="project.html">Projects</a>
+                <a href="expirience.html">Experience &amp; Skills</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Hero / Profile Section -->
+            <section class="hero-section">
+                <div class="hero-avatar-wrapper">
+                    <img class="profile-photo" src="./foto.jpg" alt="Viktoriia Prominska - Frontend Developer">
+                    <div class="status-indicator">
+                        <span class="status-dot"></span> Available for projects &amp; roles
+                    </div>
+                </div>
+
+                <div class="hero-bio">
+                    <div class="typer-container">
+                        <span class="greeting-prefix">Hello, </span>
                         <span
                             class="typer"
                             id="main"
-                            data-words="Hi there,Lovely to meet you,Let me introduce myself"
-                            data-delay="100"
-                            data-deleteDelay="1000"
-                            data-colors="#647257">
+                            data-words="I build modern web interfaces,I craft clean React &amp; TypeScript code,Welcome to my developer portfolio"
+                            data-delay="90"
+                            data-deleteDelay="1400"
+                            data-colors="#38bdf8,#a855f7,#10b981">
                         </span>
                         <span class="cursor" id="cursor"></span>
                     </div>
+
+                    <h2 class="hero-title">Frontend Developer &amp; Software Systems Specialist</h2>
+
                     <div class="introduce">
-                        Hello! My name is Viktoriia Prominska, and I’m a passionate Front-End Developer.
-                        While my experience in front-end development is modest, my commitment to delivering high-quality and user-friendly solutions is unwavering. I specialize in crafting responsive and visually appealing web interfaces using modern technologies like HTML, CSS, JavaScript, and React.
-        
-                        I bring a professional approach to every project I undertake, ensuring attention to detail, clean code, and a strong focus on user experience. My eagerness to learn and grow means I am constantly refining my skills and staying updated with the latest trends in web development.
-        
-                        If you're looking for a developer with creativity, a keen eye for design, and a dedication to continuous improvement, I’d love the opportunity to contribute to your team.
+                        <p>
+                            I am a <strong>Frontend Developer</strong> with a 5-year engineering background (Specialist Degree in Computer Engineering &amp; Software Systems) and hands-on experience developing responsive, accessible, and data-driven web applications.
+                        </p>
+                        <p>
+                            Proficient in modern <strong>JavaScript (ES6+)</strong>, <strong>TypeScript</strong>, <strong>React</strong>, <strong>HTML5/CSS3</strong>, and <strong>REST API integration</strong>. Recently architected and launched production-grade applications including 
+                            <a href="project.html" class="highlight-link">Haugaland SmartKommune</a> (civic reporting and live Nord Pool spot price hub) and 
+                            <a href="project.html" class="highlight-link">Smart Nordic Home</a> (smart energy management and appliance optimization).
+                        </p>
+                        <p>
+                            Through my training at <strong>Kodehode (Jobloop AS)</strong> and SheCodes certifications, I combine strong computational problem-solving with a keen eye for clean UI/UX and maintainable code.
+                        </p>
                     </div>
-                </td>
-            </tr>
-        </table>
-        <section class="skills">
-            <h2>My Skills</h2>
-            <table class="skills-table">
-                <tr>
-                    <td>
-                        <img src="./icon-html.png" alt="HTML" class="skill-icon">
-                        <p>HTML</p>
-                    </td>
-                    <td>
-                        <img src="./icon-css.png" alt="CSS" class="skill-icon">
-                        <p>CSS</p>
-                    </td>
-                    <td>
-                        <img src="./icon-js.png" alt="JavaScript" class="skill-icon">
-                        <p>JavaScript</p>
-                    </td>
-                    <td>
-                        <img src="https://s3.amazonaws.com/shecodesio-production/skills/thumbnails/000/000/016/original/icon-react.png?1711641851" alt="React" class="react-icon">
-                        <p>React</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <img src="./icon-api.png" alt="API" class="skill-icon">
-                        <p>API</p>
-                    </td>
-                    <td>
-                        <img src="./hosting.png" alt="Hosting" class="skill-icon">
-                        <p>Hosting</p>
-                    </td>
-                    <td>
-                        <img src="./bootstrap.png" alt="Git" class="skill-icon">
-                        <p>Bootsrtap</p>
-                    </td>
-                    <td>
-                        <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="skill-icon">
-                        <p>Figma</p>
-                    </td>
-                </tr>
-                    <tr>
-                    <td>
-                        <img src="./seo.png" alt="SEO" class="skill-icon">
-                        <p>SEO</p>
-                    </td>
-                    <td>
-                        <img src="./icon-python.png" alt="Python" class="skill-icon">
-                        <p>Python</p>
-                    </td>
-                    <td>
-                        <img src="./responsive.png" alt="Git" class="skill-icon">
-                        <p>Responsive</p>
-                    </td>
-                    <td>
-                        <img src="./editor.png" alt="VSCode" class="skill-icon">
-                        <p>VSCodes</p>
-                    </td>
-                </tr>
-            </table>
-        </section>
-    </main>
-    <footer>
-        <div class="footer-content">
-            <p>&copy; 2025 Viktoriia Prominska. All rights reserved. Created and owned by the creator of this CV.</p>
-            <div class="social-icons">
-                <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
-                </a>
-                <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank">
-                    <img src="./ln.png" alt="LinkedIn" />
-                </a>
-                <a href="https://www.facebook.com/profile.php?id=100086322291733" target="_blank">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" />
-                </a>
+
+                    <div class="hero-cta">
+                        <a href="project.html" class="btn btn-primary">View Featured Projects</a>
+                        <a href="expirience.html" class="btn btn-secondary">Experience &amp; Education</a>
+                        <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Skills Section -->
+            <section class="skills-section">
+                <div class="section-header">
+                    <h2>Technical Competencies</h2>
+                    <p class="section-subtitle">Core technologies and development tools applied across production projects</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Frontend &amp; UI</h3>
+                        <div class="skill-chips">
+                            <div class="skill-chip">
+                                <img src="./icon-react.png" alt="React" class="skill-icon-sm react-icon">
+                                <span>React</span>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="custom-tech-badge ts-badge">TS</span>
+                                <span>TypeScript</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./icon-js.png" alt="JavaScript" class="skill-icon-sm">
+                                <span>JavaScript (ES6+)</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./icon-html.png" alt="HTML5" class="skill-icon-sm">
+                                <span>HTML5</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./icon-css.png" alt="CSS3" class="skill-icon-sm">
+                                <span>CSS3 / Flex &amp; Grid</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./responsive.png" alt="Responsive" class="skill-icon-sm">
+                                <span>Responsive Design</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./bootstrap.png" alt="Bootstrap" class="skill-icon-sm">
+                                <span>Bootstrap</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3>Architecture &amp; Tools</h3>
+                        <div class="skill-chips">
+                            <div class="skill-chip">
+                                <img src="./icon-api.png" alt="REST APIs" class="skill-icon-sm">
+                                <span>RESTful APIs</span>
+                            </div>
+                            <div class="skill-chip">
+                                <span class="custom-tech-badge git-badge">Git</span>
+                                <span>Git &amp; GitHub</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma" class="skill-icon-sm">
+                                <span>Figma UI/UX</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./editor.png" alt="VS Code" class="skill-icon-sm">
+                                <span>VS Code</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./hosting.png" alt="Hosting" class="skill-icon-sm">
+                                <span>Vite / Netlify / Vercel</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./icon-python.png" alt="Python" class="skill-icon-sm">
+                                <span>Python Basics</span>
+                            </div>
+                            <div class="skill-chip">
+                                <img src="./seo.png" alt="SEO" class="skill-icon-sm">
+                                <span>Web Accessibility &amp; SEO</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>&copy; 2026 Viktoriia Prominska. Frontend Developer · Haugesund, Norway.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Viktoriia-P-H11" target="_blank" rel="noopener noreferrer" title="GitHub">
+                        <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+                    </a>
+                    <a href="https://www.linkedin.com/in/viktoriiap/" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                        <img src="./ln.png" alt="LinkedIn" />
+                    </a>
+                    <a href="https://www.instagram.com/wandering_beauty_vi/" target="_blank" rel="noopener noreferrer" title="Instagram">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/1024px-Instagram_icon.png" alt="Instagram" />
+                    </a>
+                </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
     <script src="app.js"></script>
 </body>
 </html>
