@@ -21,8 +21,10 @@ Professional portfolio website and interactive CV of **Viktoriia Prominska**, Fr
 - **Dynamic Energy Calculator:** Household electricity cost simulation with Norwegian government subsidy (*strømstøtte*).
 - **Tech Stack:** `TypeScript`, `React`, `Vite`, `Leaflet`, `REST APIs`, `CSS Grid/Flexbox`.
 
-### 2. [Smart Nordic Home](https://github.com/ViktoriiaProm/Nordic__Smart_Energy.git)
+### 2. [Smart Nordic Home](https://nordic-smart-energy.vercel.app/)
 *Intelligent Nordic Household Energy Manager & Appliance Scheduler*
+- **Live Site:** [https://nordic-smart-energy.vercel.app/](https://nordic-smart-energy.vercel.app/)
+- **GitHub Repository:** [https://github.com/ViktoriiaProm/Nordic__Smart_Energy.git](https://github.com/ViktoriiaProm/Nordic__Smart_Energy.git)
 - **Spot Price Analytics:** 24-hour Nord Pool spot price curve visualization.
 - **Appliance Scheduling:** Automated scheduling algorithms for EV chargers, water heaters, and heat pumps during cheap off-peak hours.
 - **Savings Analytics:** Monthly electricity bill prediction and cost reduction metrics.
